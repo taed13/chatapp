@@ -10,6 +10,12 @@ require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.json({
+    message: "HOME ROUTER",
+  });
+});
+
 // Routes
 app.use("/api/auth", userRoutes);
 
