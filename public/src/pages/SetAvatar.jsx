@@ -74,7 +74,7 @@ export default function SetAvatar() {
   }, []);
 
   const notify = () => {
-    toast("Avatar selected!", toastOptions);
+    toast.success("Avatar selected!", toastOptions);
   };
 
   return (
@@ -97,7 +97,6 @@ export default function SetAvatar() {
                 }`}
               >
                 <img
-                  key={index}
                   src={`data:image/svg+xml;base64,${avatar}`}
                   alt="avatar"
                   onClick={() => {
