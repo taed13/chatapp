@@ -9,10 +9,11 @@ export default function Contacts({ contacts, currentUser, changeChat }) {
 
   useEffect(() => {
     if (currentUser) {
-      setCurrentUserName(currentUser.username);
-      setCurrentUserImage(currentUser.avatarImage);
+      setCurrentUserName(currentUser?.username);
+      setCurrentUserImage(currentUser?.avatarImage);
     }
   }, [currentUser]);
+
   const changeCurrentChat = (index, contact) => {
     setCurrentSelected(index);
     changeChat(contact);
