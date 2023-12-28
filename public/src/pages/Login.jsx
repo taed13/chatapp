@@ -74,7 +74,7 @@ function Login() {
           </div>
           <input
             type="text"
-            placeholder="Username"
+            placeholder="Username | letiendat"
             name="username"
             onChange={(e) => {
               handleChange(e);
@@ -83,7 +83,7 @@ function Login() {
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder="Password | 12345678"
             name="password"
             onChange={(e) => {
               handleChange(e);
@@ -162,6 +162,7 @@ const FormContainer = styled.div`
       text-transform: uppercase;
       a {
         color: #4e0eff;
+        cursor: pointer;
         text-decoration: none;
         font-weight: bold;
       }
